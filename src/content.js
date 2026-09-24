@@ -10,7 +10,7 @@ export const profile = {
   cvUrl: 'cv.pdf',
 }
 
-// Shared by the intro buttons and the contact section.
+// github/linkedin: intro buttons only. email: contact section only.
 export const links = {
   email: '[you@example.com]',
   github: 'https://github.com/[username]',
@@ -20,13 +20,13 @@ export const links = {
 // Order here = order in the nav and on the page, after the introduction.
 // `id` is the anchor (#contact).
 export const sections = [
-  { id: 'contact', label: 'Contact' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'education', label: 'Education' },
   { id: 'certifications', label: 'Certifications' },
   { id: 'volunteering', label: 'Volunteering' },
+  { id: 'contact', label: 'Contact' },
 ]
 
 export const projects = [
