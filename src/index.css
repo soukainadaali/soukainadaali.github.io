@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens: the only place colors and fonts are defined.
+ * Components use them by name (text-ink, bg-sun, border-mist, font-script...).
+ */
+@theme {
+  /* Drop Tailwind's default palette so only the tokens below exist. */
+  --color-*: initial;
+
+  --color-ink: #16425b; /* body text and headings */
+  --color-ink-muted: #3d5566; /* supporting text */
+  --color-primary: #2f6690; /* links, section labels, outline buttons */
+  /* ~4.4:1 on paper, fails AA for small text: hover states and labels on cards only */
+  --color-secondary: #3a7ca5;
+  --color-sky: #81c3d7; /* tag chip backgrounds, subtle highlights */
+  --color-mist: #d9dcd6; /* borders and dividers */
+  --color-sun: #f2c14e; /* accents only, never text color */
+  --color-paper: #fafaf8; /* page background */
+  --color-card: #ffffff; /* card background */
+
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  /* Only for the owner's name in the introduction */
+  --font-script: 'Herr Von Muellerhoff', cursive;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
