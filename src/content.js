@@ -1,5 +1,3 @@
-// All site content lives here. Components only read from this file.
-// Placeholders are in [brackets]: replace them with real content.
 // Paths (cv, media) have no leading slash so they work under any Vite `base`.
 
 export const profile = {
@@ -19,15 +17,16 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/[username]',
 }
 
-// Order here = order in the nav and on the page. `id` is the anchor (#projects).
+// Order here = order in the nav and on the page, after the introduction.
+// `id` is the anchor (#contact).
 export const sections = [
-  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' },
   { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
   { id: 'education', label: 'Education' },
   { id: 'certifications', label: 'Certifications' },
   { id: 'skills', label: 'Skills' },
   { id: 'volunteering', label: 'Volunteering' },
-  { id: 'contact', label: 'Contact' },
 ]
 
 export const projects = [
