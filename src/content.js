@@ -17,6 +17,16 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/[username]',
 }
 
+// Contact page (contact/index.html). Messages are delivered by Formspree to the
+// account's email. The form ID is public by design (it's in every page's code).
+export const contactPage = {
+  formspreeId: 'xdekdqbk',
+  title: 'Get in touch',
+  intro: "[One sentence, e.g. Questions about my work or an opportunity? Send me a message and I'll reply by email.]",
+  success: "Thanks, your message was sent. I'll get back to you soon.",
+  error: 'Sorry, the message could not be sent. You can email me directly instead:',
+}
+
 // Order here = order in the nav and on the page, after the introduction.
 // `id` is the anchor (#contact).
 export const sections = [
