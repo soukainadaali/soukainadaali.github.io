@@ -1,7 +1,7 @@
 import { Children, useCallback, useEffect, useRef, useState } from 'react'
 
 const arrowButton =
-  'absolute top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-mist bg-card text-primary hover:text-secondary disabled:pointer-events-none disabled:opacity-0'
+  'absolute top-1/2 z-10 flex size-10 -translate-y-1/2 items-center justify-center rounded-full border border-mist bg-card text-primary hover:text-secondary aria-disabled:cursor-default aria-disabled:opacity-30 aria-disabled:hover:text-primary'
 
 function Chevron({ direction }) {
   return (
@@ -19,7 +19,8 @@ function Chevron({ direction }) {
 }
 
 // Native horizontal scroll with snap: swipe/trackpad/arrow keys work without JS.
-// The buttons scroll one "page" (the visible width); each hides at its end.
+// The buttons scroll one "page" (the visible width); each fades at its end.
+// aria-disabled (not `disabled`) keeps keyboard focus on the button at the end.
 function Carousel({ label, children }) {
   const trackRef = useRef(null)
   const [canPrev, setCanPrev] = useState(false)
@@ -44,6 +45,7 @@ function Carousel({ label, children }) {
   }, [updateButtons])
 
   function scrollPage(direction) {
+    if ((direction < 0 && !canPrev) || (direction > 0 && !canNext)) return
     const track = trackRef.current
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     track.scrollBy({
@@ -57,7 +59,7 @@ function Carousel({ label, children }) {
       <button
         type="button"
         onClick={() => scrollPage(-1)}
-        disabled={!canPrev}
+        aria-disabled={!canPrev}
         aria-label={`Previous ${label}`}
         className={`${arrowButton} left-0 lg:-left-5`}
       >
@@ -81,7 +83,7 @@ function Carousel({ label, children }) {
       <button
         type="button"
         onClick={() => scrollPage(1)}
-        disabled={!canNext}
+        aria-disabled={!canNext}
         aria-label={`Next ${label}`}
         className={`${arrowButton} right-0 lg:-right-5`}
       >

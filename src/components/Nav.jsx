@@ -1,12 +1,27 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { profile, sections } from '../content'
 
 // Inline links from lg up; below that, a Menu button toggles a dropdown list.
+// Escape closes the list and returns focus to the button.
+// z-20: above in-page layers such as the carousel arrows (z-10).
 function Nav() {
   const [open, setOpen] = useState(false)
+  const buttonRef = useRef(null)
+
+  useEffect(() => {
+    if (!open) return
+    function onKeyDown(event) {
+      if (event.key === 'Escape') {
+        setOpen(false)
+        buttonRef.current?.focus()
+      }
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => document.removeEventListener('keydown', onKeyDown)
+  }, [open])
 
   return (
-    <header className="sticky top-0 z-10 border-b border-mist bg-paper">
+    <header className="sticky top-0 z-20 border-b border-mist bg-paper">
       <nav
         aria-label="Sections"
         className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6"
@@ -16,6 +31,7 @@ function Nav() {
         </a>
 
         <button
+          ref={buttonRef}
           type="button"
           className="rounded-md border border-mist px-3 py-1 text-sm font-bold text-primary hover:text-secondary lg:hidden"
           aria-expanded={open}

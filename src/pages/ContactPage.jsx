@@ -3,8 +3,9 @@ import Card from '../components/ui/Card'
 import CopyEmail from '../components/ui/CopyEmail'
 import { contactPage, links } from '../content'
 
+// ink-muted/70 border: 3.7:1 on white (WCAG asks 3:1 for form field edges; mist is 1.4:1)
 const field =
-  'mt-1 block w-full rounded-lg border border-mist bg-card px-3 py-2 text-ink placeholder:text-ink-muted/60'
+  'mt-1 block w-full rounded-lg border border-ink-muted/70 bg-card px-3 py-2 text-ink'
 const label = 'text-sm font-bold'
 
 // status: idle -> sending -> sent | error

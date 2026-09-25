@@ -28,7 +28,7 @@ function App() {
     <>
       <a
         href="#main"
-        className="sr-only rounded-md bg-card px-3 py-2 font-bold text-primary focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-20"
+        className="sr-only rounded-md bg-card px-3 py-2 font-bold text-primary focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-30"
       >
         Skip to content
       </a>
