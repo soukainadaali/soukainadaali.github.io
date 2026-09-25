@@ -90,9 +90,79 @@ export const education = [
   },
 ]
 
+// url: credential page (optional, '' for none).
+// image: certificate scan/screenshot in public/media/certifications/ (optional, '' for none).
 export const certifications = [
-  { name: '[Certification name]', issuer: '[Issuer]', date: '[YYYY]', url: '[https://credential-link]' },
-  { name: '[Certification name]', issuer: '[Issuer]', date: '[YYYY]', url: '' },
+  {
+    name: '[Certification name 1]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
+  {
+    name: '[Certification name 2]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
+  {
+    name: '[Certification name 3]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '',
+    image: '',
+  },
+  {
+    name: '[Certification name 4]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
+  {
+    name: '[Certification name 5]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
+  {
+    name: '[Certification name 6]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '',
+    image: '',
+  },
+  {
+    name: '[Certification name 7]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
+  {
+    name: '[Certification name 8]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
+  {
+    name: '[Certification name 9]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '',
+    image: '',
+  },
+  {
+    name: '[Certification name 10]',
+    issuer: '[Issuer]',
+    date: '[YYYY]',
+    url: '[https://credential-link]',
+    image: '',
+  },
 ]
 
 // Array (not object) so the category order is fixed.
