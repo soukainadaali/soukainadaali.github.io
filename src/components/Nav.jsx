@@ -29,14 +29,14 @@ function Nav() {
           id="nav-links"
           className={`${open ? 'flex' : 'hidden'} absolute inset-x-0 top-full flex-col border-b border-mist bg-paper px-4 py-2 sm:px-6 lg:static lg:flex lg:flex-row lg:gap-6 lg:border-0 lg:p-0`}
         >
-          {sections.map(({ id, label }) => (
+          {sections.map(({ id, label, navLabel }) => (
             <li key={id}>
               <a
                 href={`#${id}`}
                 onClick={() => setOpen(false)}
                 className="block py-2 text-sm text-primary hover:text-secondary lg:py-0"
               >
-                {label}
+                {navLabel ?? label}
               </a>
             </li>
           ))}

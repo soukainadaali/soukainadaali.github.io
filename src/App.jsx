@@ -1,5 +1,6 @@
 import Certifications from './components/Certifications'
 import Contact from './components/Contact'
+import Distinctions from './components/Distinctions'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Intro from './components/Intro'
@@ -17,6 +18,7 @@ const sectionComponents = {
   projects: Projects,
   skills: Skills,
   education: Education,
+  distinctions: Distinctions,
   certifications: Certifications,
   volunteering: Volunteering,
 }

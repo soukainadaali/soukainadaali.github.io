@@ -12,8 +12,9 @@ function Certifications() {
       <Carousel label="certifications">
         {certifications.map((cert, index) => (
           <Card key={index} as="article" className="h-full">
-            {cert.image && (
-              // A4-landscape frame; object-contain so certificate text is never cropped.
+            {/* A4-landscape frame; object-contain so certificate text is never cropped.
+                Without an image, a dashed frame of the same size marks the empty slot. */}
+            {cert.image ? (
               <ExternalLink href={cert.image} className="mb-4 block rounded-md">
                 <img
                   src={cert.image}
@@ -22,6 +23,10 @@ function Certifications() {
                   className="aspect-[297/210] w-full rounded-md border border-mist bg-card object-contain"
                 />
               </ExternalLink>
+            ) : (
+              <div className="mb-4 flex aspect-[297/210] w-full items-center justify-center rounded-md border border-dashed border-mist text-sm text-ink-muted">
+                [Certificate image]
+              </div>
             )}
             <h3 className="font-bold">
               {cert.url ? (

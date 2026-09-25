@@ -41,17 +41,38 @@ function MediaItem({ item }) {
     )
   }
 
+  if (item.type === 'linkedin') {
+    // LinkedIn posts have no fixed shape: fixed height, the post scrolls inside.
+    return (
+      <iframe
+        src={item.url}
+        title={item.title}
+        loading="lazy"
+        allowFullScreen
+        className="h-[550px] w-full rounded-[10px] border border-mist bg-card"
+      />
+    )
+  }
+
   return null
 }
 
+// Full class strings so Tailwind generates them. 2 = inside half-width cards.
+const gridColumns = {
+  2: 'grid-cols-2',
+  3: 'grid-cols-2 lg:grid-cols-3',
+}
+
+const fullRow = ['embed', 'linkedin']
+
 // Images and videos are tiles; embeds take a full row (players need the width).
-function MediaGallery({ media }) {
+function MediaGallery({ media, columns = 3 }) {
   if (!media?.length) return null
 
   return (
-    <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-3">
+    <div className={`mt-4 grid gap-3 ${gridColumns[columns]}`}>
       {media.map((item, i) => (
-        <figure key={i} className={item.type === 'embed' ? 'col-span-full' : ''}>
+        <figure key={i} className={fullRow.includes(item.type) ? 'col-span-full' : ''}>
           <MediaItem item={item} />
           {item.caption && (
             <figcaption className="mt-1 text-sm text-ink-muted">{item.caption}</figcaption>

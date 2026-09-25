@@ -34,6 +34,8 @@ export const sections = [
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'education', label: 'Education' },
+  // navLabel (optional): shorter text for the nav when the heading is long.
+  { id: 'distinctions', label: 'Scholarships & Distinctions', navLabel: 'Distinctions' },
   { id: 'certifications', label: 'Certifications' },
   { id: 'volunteering', label: 'Volunteering' },
   { id: 'contact', label: 'Contact' },
@@ -101,7 +103,9 @@ export const education = [
 ]
 
 // url: credential page (optional, '' for none).
-// image: certificate scan/screenshot in public/media/certifications/ (optional, '' for none).
+// image: put the file in public/media/certifications/ and write its path here,
+//   e.g. 'media/certifications/aws-cloud-practitioner.webp'.
+//   While '' the card shows a dashed "[Certificate image]" placeholder frame.
 export const certifications = [
   {
     name: '[Certification name 1]',
@@ -175,6 +179,24 @@ export const certifications = [
   },
 ]
 
+// Only things I was selected for or took part in, not events I merely attended.
+// description: one short paragraph, no bullets. media: same types as volunteering
+// (see below) plus LinkedIn posts; usually one kind per entry; [] for none.
+export const distinctions = [
+  {
+    title: '[Merit scholarship name]',
+    description:
+      '[Two or three sentences: who awards it, how selective it is, what it covers, and your class ranking, e.g. ranked 1st of N in YYYY.]',
+    media: [],
+  },
+  {
+    title: '[Company visit with the scholarship program]',
+    description:
+      '[One or two sentences: what the visit was, how participants were selected, what you took away.]',
+    media: [],
+  },
+]
+
 // Array (not object) so the category order is fixed.
 export const skills = [
   { category: 'ML / Data', items: ['[e.g. PyTorch]', '[scikit-learn]', '[pandas]'] },
@@ -188,6 +210,8 @@ export const skills = [
 //   { type: 'image', src: 'media/photo.webp', alt: 'What the photo shows' }
 //   { type: 'video', src: 'media/clip.mp4', poster: 'media/clip.webp', caption: '...' }
 //   { type: 'embed', url: 'https://www.youtube-nocookie.com/embed/VIDEO_ID', title: '...' }
+//   { type: 'linkedin', url: 'https://www.linkedin.com/embed/feed/update/urn:li:share:ID', title: '...' }
+//     (LinkedIn post: ⋯ menu → "Embed this post" → copy the src="..." URL)
 export const volunteering = [
   {
     role: '[Role, e.g. President]',
