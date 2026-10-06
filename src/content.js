@@ -12,7 +12,7 @@ export const profile = {
 
 
 export const links = {
-  email: '[soukaina.daali@edu.isga.ma]',
+  email: 'soukaina.daali@edu.isga.ma',
   github: 'https://github.com/soukainadaali',
   linkedin: 'www.linkedin.com/in/soukainadaali',
 }
