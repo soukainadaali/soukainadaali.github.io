@@ -113,63 +113,63 @@ export const certifications = [
     issuer: 'ETS',
     date: '02/2026 - 02/2028',
     url: '[https://credential-link]',
-    image: 'public/media/certifications/ets_toefl.png',
+    image: 'media/certifications/ets_toefl.png',
   },
   {
     name: 'OCI AI Foundations Associate',
     issuer: 'Oracle',
     date: '10/2025 - 10/2027',
     url: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=97EB0771178FFE64C3D053415FF338976363F82E404752615AAE8C5B00EE709D',
-    image: 'public/media/certifications/oracle_oci.png',
+    image: 'media/certifications/oracle_oci.png',
   },
   {
     name: 'Analyze Data in Azure ML Studio',
     issuer: 'Coursera',
     date: '08/2025',
     url: 'https://coursera.org/share/ada744c75ba33deecaa579b61ed65389',
-    image: 'public/media/certifications/coursera_azure.png',
+    image: 'media/certifications/coursera_azure.png',
   },
   {
     name: 'Pneumonia Classification using PyTorch',
     issuer: 'Coursera',
     date: '07/2025',
     url: 'https://coursera.org/share/0afccdf87e7df0f84c36150de9fd059b',
-    image: 'public/media/certifications/coursera_pytorch.png',
+    image: 'media/certifications/coursera_pytorch.png',
   },
   {
     name: 'Basic Image Classification with TensorFlow',
     issuer: 'Coursera',
     date: '07/2025',
     url: 'https://coursera.org/share/1c62c4cbdd0a2508ee5d2bf3bc8efb6e',
-    image: 'public/media/certifications/coursera_tensorflow.png',
+    image: 'media/certifications/coursera_tensorflow.png',
   },
   {
     name: 'Data Analysis Using Pyspark',
     issuer: 'Coursera',
     date: '07/2025',
     url: 'https://coursera.org/share/896c67c17fbe2321d901fc27048b3b01',
-    image: 'public/media/certifications/coursera_pyspark.png',
+    image: 'media/certifications/coursera_pyspark.png',
   },
   {
     name: 'Excel for Beginners: Pivot Tables',
     issuer: 'Coursera',
     date: '07/2025',
     url: 'https://coursera.org/share/77472aff700e83a74642bcb640749e64',
-    image: 'public/media/certifications/coursera_excel.png',
+    image: 'media/certifications/coursera_excel.png',
   },
   {
     name: 'Introduction to Java Programming: Java Fundamental Concepts',
     issuer: 'Coursera',
     date: '12/2024',
     url: 'https://coursera.org/share/a2798d1a14469435d5df3b23bc9510a1',
-    image: 'public/media/certifications/coursera_java.png',
+    image: 'media/certifications/coursera_java.png',
   },
   {
     name: 'Intermediate Relational Database and SQL',
     issuer: 'Coursera',
     date: '10/2024',
     url: 'https://coursera.org/share/f6b858ba656fdf57dbbf3956045e3a55',
-    image: 'public/media/certifications/coursera_sql.png',
+    image: 'media/certifications/coursera_sql.png',
   },
 ]
 
@@ -180,7 +180,7 @@ export const distinctions = [
     description:
       'I am a recipient of a merit-based scholarship from Jadara Foundation (NGO), awarded for my outstanding baccalaureate results, which allows me to pursue my engineering studies at ISGA for five years (2022 - 2027).',
     link: { label: 'Link', url: 'https://jadara.ngo/en/' },
-    media: [{ type: 'image', src: 'public/media/attestationBourse.png', alt: 'attestation de bourse' }],
+    media: [{ type: 'image', src: 'media/attestationBourse.png', alt: 'attestation de bourse' }],
   },
 
 
@@ -217,9 +217,9 @@ export const volunteering = [
     organization: 'ISGA',
     dates: '10/2024 – 06/2025',
     points: ["I founded and presided over a debate club, where we organized workshops and roundtable discussions on topics relevant to young people, such as the reform of the Family Code and women's leadership. Attendees included both students and professors recognized in the fields under discussion."],
-    media: [{ type: 'image', src: 'public/media/agora1.jpg', alt: 'firstWorkshop' },
-      { type: 'image', src: 'public/media/agora2.jpg', alt: 'secondWorkshop' },
-      { type: 'image', src: 'public/media/agora3.jpg', alt: 'thirdWorkshop' }
+    media: [{ type: 'image', src: 'media/agora1.jpg', alt: 'firstWorkshop' },
+      { type: 'image', src: 'media/agora2.jpg', alt: 'secondWorkshop' },
+      { type: 'image', src: 'media/agora3.jpg', alt: 'thirdWorkshop' }
     ],
   },
   {
@@ -234,7 +234,7 @@ export const volunteering = [
     organization: 'Jadara Foundation',
     dates: '11/2024',
     points: ['I helped organize an integration day for new scholarship holders.'],
-    media: [{ type: 'image', src: 'public/media/attestation_journeeIntegration.png', alt: 'attestation de remerciement' }],
+    media: [{ type: 'image', src: 'media/attestation_journeeIntegration.png', alt: 'attestation de remerciement' }],
   },
   {
     role: "Delegate and Organizing Committee Member, African Cultural Day of Morocco",
