@@ -11,6 +11,7 @@ lerna-debug.log*
 CLAUDE.md
 README.md
 .claude/
+public/cv.pdf
 
 node_modules
 dist

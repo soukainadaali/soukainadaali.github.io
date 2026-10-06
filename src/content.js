@@ -7,7 +7,7 @@ export const profile = {
   abstract:
     "I'm a computer science engineering student specializing in big data and artificial intelligence in Morocco with a strong interest in reliable machine learning, especially uncertainty quantification and probabilistic ML. I've gained hands-on experience in MLOps on Azure ML through my internship work. Beyond the technical side, I enjoy building communities, whether through debate, mentoring teams at an international hackathon, or organizing cultural and career events. I'm currently looking for research opportunities in machine learning abroad.",
   keywords: ['Scientific Research', 'Quantitative Uncertainty', 'Machine Learning', 'Data Science', 'MLOps', 'Artificial Intelligence'],
-  cvUrl: 'cv.pdf',
+  cvUrl: '',
 }
 
 

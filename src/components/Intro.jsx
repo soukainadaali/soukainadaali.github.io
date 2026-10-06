@@ -29,13 +29,15 @@ function Intro() {
       </div>
 
       <div className="mt-10 flex flex-wrap justify-center gap-3">
-        <a
-          href={profile.cvUrl}
-          download
-          className="rounded-lg bg-sun px-5 py-2 font-bold text-ink hover:bg-sun/80"
-        >
-          Download CV
-        </a>
+        {profile.cvUrl && (
+          <a
+            href={profile.cvUrl}
+            download
+            className="rounded-lg bg-sun px-5 py-2 font-bold text-ink hover:bg-sun/80"
+          >
+            Download CV
+          </a>
+        )}
         <ExternalLink href={links.github} className={outlineButton}>
           GitHub
         </ExternalLink>
