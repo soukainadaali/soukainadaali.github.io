@@ -15,7 +15,7 @@ function Volunteering() {
             dates={activity.dates}
             points={activity.points}
           >
-            <MediaGallery media={activity.media} />
+            <MediaGallery media={activity.media} columns={activity.mediaColumns} />
           </Entry>
         ))}
       </div>

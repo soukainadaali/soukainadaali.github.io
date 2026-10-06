@@ -7,6 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Kept on this computer only, not published
+CLAUDE.md
+README.md
+.claude/
+
 node_modules
 dist
 dist-ssr
