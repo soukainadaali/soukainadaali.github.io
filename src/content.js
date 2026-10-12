@@ -103,7 +103,7 @@ export const education = [
   },
 ]
 
-//   While '' the card shows a dashed "[Certificate image]" placeholder frame.
+
 export const certifications = [
   {
     name: 'TOEFL iBT',
@@ -194,12 +194,9 @@ export const skills = [
   
 ]
 
-// media item types (files go in public/media/):
-//   { type: 'image', src: 'media/photo.webp', alt: 'What the photo shows' }
-//   { type: 'video', src: 'media/clip.mp4', poster: 'media/clip.webp', caption: '...' }
-//   { type: 'embed', url: 'https://www.youtube-nocookie.com/embed/VIDEO_ID', title: '...' }
-//   { type: 'linkedin', url: 'https://www.linkedin.com/embed/feed/update/urn:li:share:ID', title: '...' }
-//     (LinkedIn post: ⋯ menu → "Embed this post" → copy the src="..." URL)
+//   { type: 'video', src: 'media/clip.mp4', poster: 'media/clip.webp', caption: '' }
+//   { type: 'embed', url: 'https://www.youtube-nocookie.com/embed/VIDEO_ID', title: '' }
+//   { type: 'linkedin', url: 'https://www.linkedin.com/embed/feed/update/urn:li:share:ID', title: '' }
 export const volunteering = [
   {
     role: 'Mentor',
@@ -232,6 +229,12 @@ export const volunteering = [
     dates: '11/2024',
     points: ['I helped organize an integration day for new scholarship holders.'],
     media: [{ type: 'image', src: 'media/attestation_journeeIntegration.png', alt: 'attestation de remerciement' }],
+  },
+  {
+    role: "Student Guide, Aivancity Summer School",
+    organization: 'ISGA',
+    dates: '05/2024',
+    points: ["I served as a tour guide for students attending a summer school organized by Aivancity-Paris in partnership with ISGA."]
   },
   {
     role: "Delegate and Organizing Committee Member, African Cultural Day of Morocco",
