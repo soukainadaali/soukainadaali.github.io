@@ -3,8 +3,7 @@ import Card from './ui/Card'
 import CopyEmail from './ui/CopyEmail'
 import Section from './ui/Section'
 
-// The address links to the contact form page; Copy stays for people who
-// prefer their own email app. Relative href works under any Vite `base`.
+
 function Contact() {
   return (
     <Section id="contact">

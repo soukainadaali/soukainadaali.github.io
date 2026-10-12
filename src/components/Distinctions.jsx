@@ -4,7 +4,6 @@ import ExternalLink from './ui/ExternalLink'
 import MediaGallery from './ui/MediaGallery'
 import Section from './ui/Section'
 
-// Never 3 per row: the media needs more room than project cards.
 function Distinctions() {
   return (
     <Section id="distinctions">

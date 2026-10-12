@@ -17,7 +17,7 @@ function Projects() {
             <p className="mt-1 text-sm text-ink-muted">
               <span className="font-bold text-ink">Result:</span> {project.result}
             </p>
-            {/* mt-auto pins the link to the bottom so links line up across a row */}
+          
             <ExternalLink
               href={project.github}
               className="mt-auto self-start pt-4 font-bold text-primary hover:text-secondary"

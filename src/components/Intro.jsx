@@ -4,7 +4,6 @@ import ExternalLink from './ui/ExternalLink'
 const outlineButton =
   'rounded-lg border border-primary px-5 py-2 font-bold text-primary hover:border-secondary hover:text-secondary'
 
-// "Paper title block": name, accent bar, affiliation, abstract, keywords, links.
 function Intro() {
   return (
     <section

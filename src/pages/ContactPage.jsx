@@ -32,7 +32,6 @@ function ContactPage() {
 
   return (
     <main className="mx-auto max-w-xl px-4 py-10 sm:px-6 sm:py-16">
-      {/* Relative link back to the portfolio, works under any Vite `base` */}
       <a href="../" className="text-sm font-bold text-primary hover:text-secondary">
         <span aria-hidden="true">←</span> Back to portfolio
       </a>
@@ -60,7 +59,6 @@ function ContactPage() {
               <input name="name" type="text" required autoComplete="name" className={field} />
             </label>
 
-            {/* Formspree uses the "email" field as the reply-to address */}
             <label className="block">
               <span className={label}>Your email</span>
               <input name="email" type="email" required autoComplete="email" className={field} />
@@ -72,7 +70,7 @@ function ContactPage() {
             </label>
 
             <input type="hidden" name="_subject" value="New message from your portfolio" />
-            {/* Honeypot: hidden from people, bots fill it, Formspree drops those */}
+            
             <input
               type="text"
               name="_gotcha"

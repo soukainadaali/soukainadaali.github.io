@@ -10,8 +10,7 @@ import Skills from './components/Skills'
 import Volunteering from './components/Volunteering'
 import { sections } from './content'
 
-// Maps each id in content.js `sections` to its component, so the page
-// renders in whatever order content.js lists them.
+
 const sectionComponents = {
   contact: Contact,
   experience: Experience,

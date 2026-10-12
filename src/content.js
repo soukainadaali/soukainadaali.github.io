@@ -7,21 +7,21 @@ export const profile = {
   abstract:
     "I'm a computer science engineering student specializing in big data and artificial intelligence in Morocco with a strong interest in reliable machine learning, especially uncertainty quantification and probabilistic ML. I've gained hands-on experience in MLOps on Azure ML through my internship work. Beyond the technical side, I enjoy building communities, whether through debate, mentoring teams at an international hackathon, or organizing cultural and career events. I'm currently looking for research opportunities in machine learning abroad.",
   keywords: ['Scientific Research', 'Quantitative Uncertainty', 'Machine Learning', 'Data Science', 'MLOps', 'Artificial Intelligence'],
-  cvUrl: '',
+  cvUrl: 'soukainadaalicvupdated.pdf',
 }
 
 
 export const links = {
   email: 'soukaina.daali@edu.isga.ma',
   github: 'https://github.com/soukainadaali',
-  linkedin: 'www.linkedin.com/in/soukainadaali',
+  linkedin: 'https://www.linkedin.com/in/soukainadaali',
 }
 
 // Messages are delivered by Formspree 
 export const contactPage = {
   formspreeId: 'xdekdqbk',
   title: 'Get in touch',
-  intro: "[One sentence, e.g. Questions about my work or an opportunity? Send me a message and I'll reply by email.]",
+  intro: "Questions about my work or an opportunity? Send me a message and I'll reply by email.]",
   success: "Thanks, your message was sent. I'll get back to you soon.",
   error: 'Sorry, the message could not be sent. You can email me directly instead:',
 }
@@ -33,7 +33,6 @@ export const sections = [
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'education', label: 'Education' },
-  // navLabel (optional): shorter text for the nav when the heading is long.
   { id: 'distinctions', label: 'Scholarships & Distinctions', navLabel: 'Distinctions' },
   { id: 'certifications', label: 'Certifications' },
   { id: 'volunteering', label: 'Volunteering' },
