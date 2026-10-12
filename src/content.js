@@ -21,13 +21,11 @@ export const links = {
 export const contactPage = {
   formspreeId: 'xdekdqbk',
   title: 'Get in touch',
-  intro: "Questions about my work or an opportunity? Send me a message and I'll reply by email.]",
+  intro: "Questions about my work or an opportunity? Send me a message and I'll reply by email.",
   success: "Thanks, your message was sent. I'll get back to you soon.",
   error: 'Sorry, the message could not be sent. You can email me directly instead:',
 }
 
-// Order here = order in the nav and on the page, after the introduction.
-// `id` is the anchor (#contact).
 export const sections = [
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
