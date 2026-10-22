@@ -168,6 +168,14 @@ export const certifications = [
     url: 'https://coursera.org/share/f6b858ba656fdf57dbbf3956045e3a55',
     image: 'media/certifications/coursera_sql.png',
   },
+  {
+    name: "Machine Learning : les algorithmes d'apprentissage",
+    issuer: 'Linkedin e-learning',
+    date: '03/2024',
+    url: 'https://www.linkedin.com/learning/certificates/18ab34bd946ee8c797b295d083647c4a666e416363bc487d3f2a3bf95ace8541?trk=share_certificate',
+    image: 'media/certifications/linkedin-algrithmesapprentissage.png',
+  },
+
 ]
 
 
