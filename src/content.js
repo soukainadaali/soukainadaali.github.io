@@ -7,7 +7,7 @@ export const profile = {
   abstract:
     "I'm a computer science engineering student specializing in big data and artificial intelligence in Morocco with a strong interest in reliable machine learning, especially uncertainty quantification and probabilistic ML. I've gained hands-on experience in MLOps on Azure ML through my internship work. Beyond the technical side, I enjoy building communities, whether through debate, mentoring teams at an international hackathon, or organizing cultural and career events. I'm currently looking for research opportunities in machine learning.",
   keywords: ['Scientific Research', 'Quantitative Uncertainty', 'Machine Learning', 'Data Science', 'MLOps', 'Artificial Intelligence'],
-  cvUrl: 'soukainadaali_english_resume2026.pdf',
+  //cvUrl: 'soukainadaali_english_resume2026.pdf', //put inside public folder
 }
 
 
@@ -68,9 +68,10 @@ export const experience = [
     location: 'London, United Kingdom, Remote',
     dates: '07/2026 – 08/2026',
     points: [
-      'Designed and deployed an end-to-end MLOps pipeline on Azure ML (SDK v2, MLflow, Docker) for LSTM anomaly detection on NASA SMAP/MSL telemetry: data versioning, hyperparameter sweeps, F1-gated model registration, and blue/green batch endpoints.',
-      'Chose F1 over validation loss as the promotion criterion after the best-validation-loss sweep configuration scored worse on F1. Registered models from job outputs to keep lineage.',
-      'Automated retraining and scoring through an event-driven orchestrator, and adapted the architecture to a restricted Contributor role and quota limits.'
+      'Designed and deployed an end-to-end MLOps pipeline on Azure ML (SDK v2, MLflow, Docker) for LSTM anomaly detection : data versioning, hyperparameter sweeps, F1-gated model registration, and blue/green batch endpoints.',
+      'Chose F1 over validation loss as the promotion criterion after the best-validation-loss sweep configuration scored worse on F1.', 
+      'Registered models from job outputs to keep lineage.',
+      'Automated retraining and scoring through an event-driven orchestrator.'
     ],
   },
   {
@@ -79,9 +80,9 @@ export const experience = [
     location: 'Casablanca, Morocco, Hybrid',
     dates: '08/2024 – 09/2024',
     points: [
-      'Participated in the testing phases of a full-stack application (React.js / Laravel / MySQL) and wrote bug reports',
+      'Tested a full-stack application (React.js / Laravel / MySQL) and wrote bug reports',
       'Used Git and GitHub for version control and change management',
-      'Contributed to the integration and handling of databases within the application architecture'],
+      'Handled databases within the application architecture'],
   },
 ]
 
@@ -105,6 +106,13 @@ export const education = [
 
 
 export const certifications = [
+  {
+    name: 'Oracle Agentic AI Foundations Associate',
+    issuer: 'Oracle',
+    date: '11/2026 - 11/2028',
+    url: '[https://catalog-education.oracle.com/pls/certview/sharebadge?id=FEAE4E76BE61AF10DF7B3F6B07A4F95E4FAA2127C131A8DCAAA8A5FA0F0C4D10]',
+    image: 'media/certifications/oracle_agenticAI.png',
+  },
   {
     name: 'TOEFL iBT',
     issuer: 'ETS',
@@ -195,10 +203,10 @@ export const distinctions = [
 export const skills = [
   { category: 'Data Analysis', items: ['panda', 'numpy', 'scikit-learn', 'tensorflow', ] },
   { category: 'Programming', items: ['Python', 'SQL', 'Java'] },
-  { category: 'Cloud', items: ['Azure'] },
+  { category: 'Cloud', items: ['Azure', 'Microsoft Fabric'] },
   { category: 'Visualisation & BI', items: ['matplotlib', 'seaborn', 'Power BI'] },
   { category: 'Big Data', items: ['Hadoop (HDFS, MapReduce)', 'ApacheSpark', 'Docker'] },
-  { category: 'Languages', items: ['Arabic, native', 'French, C1', 'English, C1'] },
+  { category: 'Languages', items: ['Arabic, native', 'French, B2', 'English, C1'] },
   
 ]
 
@@ -228,7 +236,13 @@ export const volunteering = [
     role: 'Organisation Committee Member for Employability Day',
     organization: 'ISGA',
     dates: '12/2024',
-    points: ['I helped organize an employability day, making sure the interview process ran smoothly for students. My role involved directing recruiting teams to their assigned stands and organizing students into groups, so that everyone had a fair chance to be interviewed without overcrowding.'],
+    points: [
+    {
+      text: 'I helped organize an employability day, making sure the interview process ran smoothly for students. My role involved directing recruiting teams to their assigned stands and organizing students into groups, so that everyone had a fair chance to be interviewed without overcrowding: {link}',
+      link: { label: "ISGA Employability Day", url: 'https://lnkd.in/p/eeQe98_3' },
+    },
+    ],
+
     media: [],
   },
   {
@@ -238,12 +252,18 @@ export const volunteering = [
     points: ['I helped organize an integration day for new scholarship holders.'],
     media: [{ type: 'image', src: 'media/attestation_journeeIntegration.png', alt: 'attestation de remerciement' }],
   },
-  {
-    role: "Student Guide, Aivancity Summer School",
+    {
+    role: 'Student Guide, Aivancity Summer School',
     organization: 'ISGA',
     dates: '05/2024',
-    points: ["I served as a tour guide for students attending a summer school organized by Aivancity-Paris in partnership with ISGA."]
+    points: [
+      {
+        text: 'I served as a tour guide for students attending a summer school organized by {link} in partnership with ISGA.',
+        link: { label: 'Aivancity-Paris', url: 'https://aivancity.ai/en' },
+      },
+    ],
   },
+
   {
     role: "Delegate and Organizing Committee Member, African Cultural Day of Morocco",
     organization: 'ISGA',

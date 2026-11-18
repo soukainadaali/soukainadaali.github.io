@@ -1,3 +1,24 @@
+import ExternalLink from './ExternalLink'
+
+// A bullet is a plain string, or { text, link: { label, url } } where the
+// `{link}` placeholder in `text` is replaced by the link.
+function Point({ point }) {
+  if (typeof point === 'string') return point
+  const [before, after = ''] = point.text.split('{link}')
+  return (
+    <>
+      {before}
+      <ExternalLink
+        href={point.link.url}
+        className="text-primary underline underline-offset-2 hover:text-ink"
+      >
+        {point.link.label}
+      </ExternalLink>
+      {after}
+    </>
+  )
+}
+
 // Shared layout for Experience, Education and Volunteering entries.
 // `children` renders below the bullets (used for the volunteering gallery).
 function Entry({ title, subtitle, dates, meta, points = [], children }) {
@@ -13,7 +34,9 @@ function Entry({ title, subtitle, dates, meta, points = [], children }) {
       {points.length > 0 && (
         <ul className="mt-3 list-disc space-y-1 pl-5 text-ink-muted marker:text-sky">
           {points.map((point, i) => (
-            <li key={i}>{point}</li>
+            <li key={i}>
+              <Point point={point} />
+            </li>
           ))}
         </ul>
       )}
