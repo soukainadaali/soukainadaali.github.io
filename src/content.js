@@ -28,7 +28,7 @@ export const contactPage = {
 
 export const sections = [
   { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Projects' },
+  { id: 'projects', label: 'Projects & Programs' },
   { id: 'skills', label: 'Skills' },
   { id: 'education', label: 'Education' },
   { id: 'distinctions', label: 'Scholarships & Distinctions', navLabel: 'Distinctions' },
@@ -46,7 +46,7 @@ export const projects = [
     github: 'https://github.com/soukainadaali/satellite-anomaly-mlops',
   },
   {
-    title: 'AeroRisk: Aviation Accident Severity Prediction',
+    title: 'Aviation Accident Severity Prediction',
     description: 'Predicts how severe an aviation accident is likely to be from aircraft, crew, flight and weather conditions, so safety analysts can spot high-risk situations before they turn fatal.',
     method: 'Cleaned ~29k NTSB accident records joined with NOAA weather data, then compared 6 classifiers (best: LightGBM). MAPIE conformal prediction gives each prediction a 90%-confidence set of possible outcomes, and SHAP explains which factors drive it. A Flask + React app shows the results, with Gemini-generated safety reports.',
     result: 'On the validation set, 87.7% recall on fatal accidents; the 90% confidence sets were correct 89.8% of the time, with 1.75 classes per set on average.',
@@ -59,6 +59,32 @@ export const projects = [
     result: 'Tuned LightGBM reached 0.87 AUC-ROC and caught 77% of churners on the held-out test set.',
     github: 'https://github.com/soukainadaali/churn-prediction',
   },
+    {
+    title: 'Patient-Monitoring Drone (Prototype)',
+    context: "Orange Digital Center (ODC) — Project Makers program (selective, admission by interview)",
+    team: "4 students from ENSET, ENSA, ISTA and ISGA",
+    description: "An autonomous indoor drone designed to move between patients in a hospital ward, identify each patient by scanning their ID, read their vital signs, and update a central database, so doctors and staff can follow patients' status in real time from a web app.",
+    steps: [
+      'Fly to patient',
+      'Scan patient ID (computer vision)',
+      'Read vitals (OCR)',
+      'Update database → doctor sees updates in the app',
+    ],
+    details: [
+      { label: 'Hardware tested', text: 'Raspberry Pi 5 (mounted on the drone), A2212/13T 1000KV brushless motors ×4, MPU6050 IMU, joystick control, 2200 mAh LiPo battery' },
+      { label: 'Planned software', text: 'OpenCV (patient ID scanning), Tkinter (control interface), React (doctor-facing app)' },
+      { label: 'My role', text: 'Software Developer and Documentation Lead' },
+      { label: 'Status', text: 'Prototype stage. All four motors and propellers were successfully tested; full flight was not achieved due to battery and hardware constraints, and the project was paused when the academic term resumed.' },
+    ],
+    tags: ['Raspberry Pi', 'IoT', 'Embedded Systems', 'Computer Vision', 'OpenCV', 'React', 'Hardware'],
+    media: [
+      { type: 'image', src: 'media/projects/drone/odc_members.jpg', alt: 'Team members', caption: 'Team members at the Orange Digital Center' },
+      { type: 'video', src: 'media/projects/drone/video1_testing.mp4', caption: "Team testing drone's propeller" },
+      { type: 'video', src: 'media/projects/drone/video2_testing.mp4', caption: "Motor spin directions verified: correct CW/CCW configuration on all four motors." },
+    ],
+    link: { label: 'Prototype (PDF)', url: 'media/projects/drone/technical_overview.pdf' },
+  },
+
 ]
 
 export const experience = [
@@ -262,6 +288,7 @@ export const volunteering = [
         link: { label: 'Aivancity-Paris', url: 'https://aivancity.ai/en' },
       },
     ],
+    media: [{ type: 'image', src: 'media/aivancity_summerschool.jpg', alt: 'Aivancity Summer School' }]
   },
 
   {
