@@ -288,7 +288,9 @@ export const volunteering = [
         link: { label: 'Aivancity-Paris', url: 'https://aivancity.ai/en' },
       },
     ],
-    media: [{ type: 'image', src: 'media/aivancity_summerschool.jpg', alt: 'Aivancity Summer School' }]
+    media: [{ type: 'image', src: 'media/aivancity_summerschool.jpg', alt: 'First meet-up with Aivancity Students' },
+      { type: 'image', src: 'media/aivancity_summerschool2.jpg', alt: 'Visiting historical monuments of Rabat city' }
+    ]
   },
 
   {
