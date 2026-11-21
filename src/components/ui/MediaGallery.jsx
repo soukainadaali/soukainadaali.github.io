@@ -25,7 +25,7 @@ function MediaItem({ item, fill }) {
         title={item.title}
         loading="lazy"
         allowFullScreen
-        className="h-[560px] w-full rounded-[10px] border border-mist bg-card"
+        className="h-[440px] w-full rounded-[10px] border border-mist bg-card"
       />
     )
   }

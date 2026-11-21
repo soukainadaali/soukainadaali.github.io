@@ -264,8 +264,8 @@ export const volunteering = [
     dates: '12/2024',
     points: [
     {
-      text: 'I helped organize an employability day, making sure the interview process ran smoothly for students. My role involved directing recruiting teams to their assigned stands and organizing students into groups, so that everyone had a fair chance to be interviewed without overcrowding: {link}',
-      link: { label: "ISGA Employability Day", url: 'https://lnkd.in/p/eeQe98_3' },
+      text: 'I helped organize {link}, making sure the interview process ran smoothly for students. My role involved directing recruiting teams to their assigned stands and organizing students into groups, so that everyone had a fair chance to be interviewed without overcrowding',
+      link: { label: "ISGA's Career Day", url: 'https://lnkd.in/p/eeQe98_3' },
     },
     ],
 
@@ -289,7 +289,7 @@ export const volunteering = [
       },
     ],
     media: [{ type: 'image', src: 'media/aivancity_summerschool.jpg', alt: 'First meet-up with Aivancity Students' },
-      { type: 'image', src: 'media/aivancity_summerschool2.jpg', alt: 'Visiting historical monuments of Rabat city' }
+            { type: 'image', src: 'media/aivancity_summerschool2.jpg', alt: 'Visiting historical monuments of Rabat city' }
     ]
   },
 
@@ -298,7 +298,9 @@ export const volunteering = [
     organization: 'ISGA',
     dates: '05/2024',
     points: ["I helped organize African Cultural Day, an event held every May that brings together students from across Africa to celebrate the continent's diverse cultures."],
-    media: [{ type: 'linkedin', url: 'https://www.instagram.com/reel/C7C7A2fNwPY/?utm_source=ig_embed&amp;utm_campaign=loading', title: 'vidéo de la journée culturelle des pays : MAroc et Mauritanie' }
+    media: [{ type: 'image', src: 'media/journeeCulturelle_pic.jpeg', alt: 'Picture wearing traditional attires' },
+      { type: 'linkedin', url: 'https://www.instagram.com/reel/C7C7A2fNwPY/?utm_source=ig_embed&amp;utm_campaign=loading', title: 'vidéo de la journée culturelle des pays : Maroc et Mauritanie' }
+            
     ],
   },
 ]
